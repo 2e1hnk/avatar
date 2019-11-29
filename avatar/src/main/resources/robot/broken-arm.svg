@@ -18,6 +18,14 @@
 	      <feFuncB type="linear" slope="2"/>
 	  </feComponentTransfer>
 	</filter>
+		<filter id="lighter2">
+	  <feComponentTransfer>
+	      <feFuncR type="linear" slope="5"/>
+	      <feFuncG type="linear" slope="5"/>
+	      <feFuncB type="linear" slope="5"/>
+	  </feComponentTransfer>
+	</filter>
+	
 <g id="Background" class="background">
 	<circle cx="256" cy="256" id="Background_1_" r="256" />
 </g>
@@ -96,8 +104,8 @@
 		<polygon fill="#3DB54A" points="156.283,267.299 155.234,264.595 151.544,266.183 149.533,260.646 150.427,260.32     152.095,264.909 155.765,263.331 157.17,266.955   " />
 		<polygon fill="#2E368F" points="153.535,261.447 149.867,259.285 150.35,258.466 153.266,260.186 156.242,256.013     161.756,259.443 161.253,260.252 156.498,257.293   " />
 	</g>
-	<g id="speaker-thing">
-		<ellipse cx="233.999" cy="264.268" fill="#5FC6CA" rx="20.46" ry="21.991" />
+	<g id="speaker-thing" class="clothing" filter="url(#lighter2)">
+		<ellipse cx="233.999" cy="264.268" rx="20.46" ry="21.991" />
 		<path d="M233.878,242.753c-1.146,0-2.267,0.107-3.359,0.303    c-2.047,3.111-15.207,24.643-0.474,42.573c1.242,0.254,2.521,0.393,3.833,0.393c11.175,0,20.233-9.687,20.233-21.634    C254.111,252.439,245.054,242.753,233.878,242.753z" fill="#1C1C1C" opacity="0.2" />
 		<path d="M251.794,253.44c-9.455,7.902-25.505,8.154-35.884,0.565" fill="none" />
 		<path d="M252.567,273.642c-9.654,8.068-26.241,8.181-37.084,0.251" fill="none" />

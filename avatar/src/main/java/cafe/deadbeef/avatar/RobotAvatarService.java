@@ -25,7 +25,7 @@ public class RobotAvatarService  {
 	@Autowired FileSystemStorageService fileSystemStorageService;
 	@Autowired ColourService colourService;
 	
-	public final String[] styles = { "broken-arm", "broken" };
+	public final String[] styles = { "broken-arm", "broken", "broken2" };
 
 	public BufferedImage generate(int style, String hash, int scale) {
 		

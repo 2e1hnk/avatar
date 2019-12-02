@@ -25,7 +25,7 @@ public class RobotAvatarService  {
 	@Autowired FileSystemStorageService fileSystemStorageService;
 	@Autowired ColourService colourService;
 	
-	public final String[] styles = { "broken-arm", "broken", "broken2" };
+	public final String[] styles = { "broken-arm", "broken", "broken2", "confused", "dancing", "dancing2" };
 
 	public BufferedImage generate(int style, String hash, int scale) {
 		
@@ -63,6 +63,7 @@ public class RobotAvatarService  {
 	            "image-rendering: optimizeQuality;" +
 	            "}" +
 	            ".background { fill: #" + Integer.toHexString(colours[colourService.BACKGROUND]).substring(2) + " }" +
+	            ".skin { fill: #" + Integer.toHexString(colours[colourService.SKIN]).substring(2) + " }" +
 	            ".skin-alt { fill: #" + Integer.toHexString(colours[colourService.SKIN_SHADOW]).substring(2) + " }" +
 	            ".eye { fill: #" + Integer.toHexString(colours[colourService.EYE]).substring(2) + " }" +
 	            ".motion { fill: #C1C4D7 }" +

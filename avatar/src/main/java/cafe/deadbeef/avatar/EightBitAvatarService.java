@@ -231,7 +231,7 @@ public class EightBitAvatarService implements AvatarService {
 		int[] colours = colourService.getRealisticColours(hash);
 		int[][] face = faces[style];
 		
-		final BufferedImage res = new BufferedImage(faces[0].length * scale, face.length * scale, BufferedImage.TYPE_INT_RGB);
+		final BufferedImage res = new BufferedImage(face[0].length * scale, face.length * scale, BufferedImage.TYPE_INT_RGB);
 		for (int x = 0; x < face[0].length; x++) {
 			for ( int i = 0; i < scale; i++ ) {
 				for (int y = 0; y < face.length; y++) {
